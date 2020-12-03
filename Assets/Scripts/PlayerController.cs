@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,18 +14,43 @@ public class PlayerController : MonoBehaviour
     private float gravity = 9.87f;
     private float verticalSpeed = 0;
     public float jumpHeight = 2f;
+    public Slider fatigueSlider;
+    public int maxFatigue;
+    public int fatigueFallRate;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+      fatigueSlider.maxValue = maxFatigue;
+      fatigueSlider.value = maxFatigue;
+
     }
 
     // Update is called once per frame
     void Update(){
     Move();
     Rotate();
-    
+    UpdateFatigueSlider();
+    }
+
+    void UpdateFatigueSlider(){
+      //FATIGUE CONTROLLER
+    if(fatigueSlider.value>= 0){
+        fatigueSlider.value -= Time.deltaTime / fatigueFallRate * 2;
+    }
+    // if(fatigueSlider.value <= 0){
+    //     CharacterSleeps();
+    // }
+    // else if (fatigueSlider.value <= 0){
+    //     fatigueSlider.value = 0;
+    // }
+    // else if (fatigueSlider.value >= 0){
+    //     fatigueSlider.value = maxFatigue;
+    // }
+    print("The Fatigue is:"+ fatigueSlider.value);
+    }
+void CharacterSleeps(){
+    //MAKE THE CHARACTER GO TO SLEEP
     }
 
     void Move(){

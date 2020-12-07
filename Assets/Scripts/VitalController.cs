@@ -31,7 +31,7 @@ public class VitalController : MonoBehaviour
     }
 
     void UpdateSliders(){
-      //FATIGUE CONTROLLER
+    //   //FATIGUE CONTROLLER
         if(fatigueSlider.value>= 0){
         fatigueSlider.value -= Time.deltaTime / fatigueFallRate * 2;
         }

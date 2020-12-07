@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
     if(fatigueSlider.value>= 0){
         fatigueSlider.value -= Time.deltaTime / fatigueFallRate * 2;
     }
+
+    //pull fatgue slider into its own script, player controller
     // if(fatigueSlider.value <= 0){
     //     CharacterSleeps();
     // }

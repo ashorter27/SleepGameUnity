@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01fa20c350a541cab293115179aa419, type: 3}
   m_Name: StartDayTree
   m_EditorClassIdentifier: 
-  charactersName: 
-  startingSentence: {fileID: 0}
+  charactersName: Deven
+  startingSentence: {fileID: 11400000, guid: 75f881cca861a834bb3d7ec7b2c94a0c, type: 2}

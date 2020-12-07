@@ -346,9 +346,15 @@ MonoBehaviour:
   upperLimit: -50
   lowerLimit: 50
   jumpHeight: 2
-  fatigueSlider: {fileID: 0}
-  maxFatigue: 0
-  fatigueFallRate: 0
+  CharacterJumpedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  CharacterIsRunningEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  CharacterDoneRunningEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &422321880
 Transform:
   m_ObjectHideFlags: 0
@@ -800,8 +806,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1035,8 +1041,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2297,8 +2303,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2430,8 +2436,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2621,7 +2627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1188720432}
-  dialogue: {fileID: 11400000, guid: 8fc848e4179a80f47b6eb34a40535127, type: 2}
+  dialogue: {fileID: 11400000, guid: b7feafbee098cf844b2f63fe257ccef3, type: 2}
 --- !u!135 &2120752083
 SphereCollider:
   m_ObjectHideFlags: 0

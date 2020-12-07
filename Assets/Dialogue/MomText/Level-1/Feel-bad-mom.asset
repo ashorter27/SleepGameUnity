@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01fa20c350a541cab293115179aa419, type: 3}
-  m_Name: MomTextTree
+  m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
+  m_Name: Feel-bad-mom
   m_EditorClassIdentifier: 
-  charactersName: Mom
-  startingSentence: {fileID: 11400000, guid: 80cbc19067b35cc4ead090d397a7cf90, type: 2}
+  text: Of course! Take all the time you need. Let me know if you need anything at
+    all! Love you!
+  nextSentence: {fileID: 0}
+  options: []

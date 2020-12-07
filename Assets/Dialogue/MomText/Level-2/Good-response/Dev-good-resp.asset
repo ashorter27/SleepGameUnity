@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
-  m_Name: SighStart
+  m_Name: Dev-good-resp
   m_EditorClassIdentifier: 
-  text: '*Sigh*
-
-    ... Just another day...'
+  text: text
   nextSentence: {fileID: 0}
-  options: []
+  options:
+  - text: 'Yes, mom. I have to go now. I''ll talk to you later. '
+    nextSentence: {fileID: 11400000, guid: 9c152fd0fe12a6e45be385d474e6414b, type: 2}
+    onOptionSelected: {fileID: 0}

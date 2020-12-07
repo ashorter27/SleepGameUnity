@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
   m_Name: TextStart
   m_EditorClassIdentifier: 
-  text: text
-  nextSentence: {fileID: 0}
+  text: Hi Dev, how're you doing? Are you feeling okay?
+  nextSentence: {fileID: 11400000, guid: 9ce081e61a6b06646934d2bec7d58a9e, type: 2}
   options: []

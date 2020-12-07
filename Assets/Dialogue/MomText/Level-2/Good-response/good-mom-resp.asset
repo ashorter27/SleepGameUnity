@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
-  m_Name: SighStart
+  m_Name: good-mom-resp
   m_EditorClassIdentifier: 
-  text: '*Sigh*
-
-    ... Just another day...'
-  nextSentence: {fileID: 0}
+  text: I am glad to hear you are well. Your father and I have been worried about
+    you... Are you sure there is nothing you want to talk about?
+  nextSentence: {fileID: 11400000, guid: 8e6375abee0e2964eb85a0e1c2f109c1, type: 2}
   options: []

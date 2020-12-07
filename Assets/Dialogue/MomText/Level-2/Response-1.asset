@@ -15,7 +15,7 @@ MonoBehaviour:
   text: Hi mom.
   nextSentence: {fileID: 0}
   options:
-  - text: I'm not great.
+  - text: I'm not great. Talk later?
     nextSentence: {fileID: 11400000, guid: 22041b15808613d4e912d1f2c857d290, type: 2}
     onOptionSelected: {fileID: 0}
   - text: 'I have to go. '

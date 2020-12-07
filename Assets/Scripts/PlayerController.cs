@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,58 +16,42 @@ public class PlayerController : MonoBehaviour
     private float gravity = 9.87f;
     private float verticalSpeed = 0;
     public float jumpHeight = 2f;
-    public Slider fatigueSlider;
-    public int maxFatigue;
-    public int fatigueFallRate;
+    public UnityEvent CharacterJumpedEvent;
+    public UnityEvent CharacterIsRunningEvent;
+    public UnityEvent CharacterDoneRunningEvent;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-      fatigueSlider.maxValue = maxFatigue;
-      fatigueSlider.value = maxFatigue;
-
+      
     }
 
     // Update is called once per frame
     void Update(){
     Move();
     Rotate();
-    UpdateFatigueSlider();
     }
 
-    void UpdateFatigueSlider(){
-      //FATIGUE CONTROLLER
-    if(fatigueSlider.value>= 0){
-        fatigueSlider.value -= Time.deltaTime / fatigueFallRate * 2;
-    }
-
-    //pull fatgue slider into its own script, player controller
-    // if(fatigueSlider.value <= 0){
-    //     CharacterSleeps();
-    // }
-    // else if (fatigueSlider.value <= 0){
-    //     fatigueSlider.value = 0;
-    // }
-    // else if (fatigueSlider.value >= 0){
-    //     fatigueSlider.value = maxFatigue;
-    // }
-    print("The Fatigue is:"+ fatigueSlider.value);
-    }
-void CharacterSleeps(){
-    //MAKE THE CHARACTER GO TO SLEEP
-    }
 
     void Move(){
       float horizontalMovement = Input.GetAxis("Horizontal");
       float verticalMovement = Input.GetAxis("Vertical");
       if (characterController.isGrounded){
             verticalSpeed = 0;
-
             if (Input.GetButtonDown("Jump")){
                 verticalSpeed += Mathf.Sqrt(jumpHeight * 2f * gravity);
+                CharacterJumpedEvent.Invoke();
+            }
+            if(Input.GetKey(KeyCode.LeftShift)){
+              speed = 15f;
+              CharacterIsRunningEvent.Invoke();
             }
         }
         else {
+            speed = 6f;
+            CharacterDoneRunningEvent.Invoke();
             verticalSpeed -= gravity * Time.deltaTime;
         }
         Vector3 gravityMovement = new Vector3(0, verticalSpeed, 0);

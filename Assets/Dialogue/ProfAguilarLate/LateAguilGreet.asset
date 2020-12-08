@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
-  m_Name: NewSentence
+  m_Name: LateAguilGreet
   m_EditorClassIdentifier: 
-  text: text
-  nextSentence: {fileID: 0}
+  text: Hello, Deven. Nice of you to join us.
+  nextSentence: {fileID: 11400000, guid: 0ffe88edd93403e48bbd73c9e1844b08, type: 2}
   options: []

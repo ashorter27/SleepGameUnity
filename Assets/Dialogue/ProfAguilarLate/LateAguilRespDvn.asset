@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
   m_Name: LateAguilRespDvn
   m_EditorClassIdentifier: 
-  text: text
+  text: 
   nextSentence: {fileID: 0}
-  options: []
+  options:
+  - text: Hi, Professor Aguilar. Sorry for being late.
+    nextSentence: {fileID: 11400000, guid: 11b97f9562c34f943ade6d13a6e26eeb, type: 2}
+    onOptionSelected: {fileID: 0}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
   m_Name: MomTextFin
   m_EditorClassIdentifier: 
-  text: Please let me know when you get this, sweetie. I'm  worried about you being
+  text: Please let me know when you get this, sweetie. I'm worried about you being
     all by yourself. Love you!
   nextSentence: {fileID: 11400000, guid: a09134bea0587af4c804a593301aeaf9, type: 2}
   options: []

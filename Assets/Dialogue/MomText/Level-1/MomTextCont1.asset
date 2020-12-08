@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
   m_Name: MomTextCont1
   m_EditorClassIdentifier: 
-  text: I wanted to let you knw that I reached out to a friend of mine from college
+  text: I wanted to let you know that I reached out to a friend of mine from college
     and got you an appointment with them at 1:30. That's after your classes, right?
   nextSentence: {fileID: 11400000, guid: 9976fa622ba0d084bbbfe1c1e6500c4c, type: 2}
   options: []

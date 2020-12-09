@@ -1,42 +1,12 @@
 fileFormatVersion: 2
-guid: 0d06dad5920c77d4d851affe9b6657b4
+guid: fcbd847c964281d469fcc5280ebd25ce
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch22_1001_Diffuse
-    second: {fileID: 2800000, guid: e589a93252741b2478889a96fbcf7a08, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch22_1001_Glossiness
-    second: {fileID: 2800000, guid: 12d344704a05bd842b450e103f4127f4, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch22_1001_Normal
-    second: {fileID: 2800000, guid: cf2a233d84ffab14b8d934938de7789d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch22_1001_Specular
-    second: {fileID: 2800000, guid: bce7a0759a2842645a6772022b34d8c4, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch22_1002_Diffuse
-    second: {fileID: 2800000, guid: 6cf2744dc31d2ea44bb3a129416444db, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch22_1002_Normal
-    second: {fileID: 2800000, guid: 97096ba3f4259da468cc2d501b8e69b6, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
-  m_Name: EarlyZamGreet
+  m_Name: EarlyZamGreetDvn
   m_EditorClassIdentifier: 
   text: text
   nextSentence: {fileID: 0}

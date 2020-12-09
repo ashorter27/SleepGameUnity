@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
   m_Name: EarlyShortResponse
   m_EditorClassIdentifier: 
-  text: text
+  text: 'Hello Deven! Nice to see you today we will begin shortly. '
   nextSentence: {fileID: 0}
   options: []

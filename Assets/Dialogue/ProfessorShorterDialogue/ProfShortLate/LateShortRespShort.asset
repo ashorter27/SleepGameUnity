@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
   m_Name: LateShortRespShort
   m_EditorClassIdentifier: 
-  text: text
+  text: It's fine. Just take your seat.
   nextSentence: {fileID: 0}
   options: []

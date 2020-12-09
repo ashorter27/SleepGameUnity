@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162724e219abf43c3984acd601ebc0aa, type: 3}
   m_Name: LateShortGreet
   m_EditorClassIdentifier: 
-  text: text
-  nextSentence: {fileID: 0}
+  text: 'Hello, Deven. Nice of you to join us today. '
+  nextSentence: {fileID: 11400000, guid: 37c260d88192c004d9a30469fa855905, type: 2}
   options: []

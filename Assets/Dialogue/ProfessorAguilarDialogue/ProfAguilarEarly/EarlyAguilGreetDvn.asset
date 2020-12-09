@@ -16,5 +16,5 @@ MonoBehaviour:
   nextSentence: {fileID: 0}
   options:
   - text: Good morning, Professor Aguilar.
-    nextSentence: {fileID: 0}
+    nextSentence: {fileID: 11400000, guid: 4ff0a119bbf8c5149ac9a8d4caee44e5, type: 2}
     onOptionSelected: {fileID: 0}

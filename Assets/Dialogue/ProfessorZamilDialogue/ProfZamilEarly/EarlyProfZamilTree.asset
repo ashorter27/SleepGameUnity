@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01fa20c350a541cab293115179aa419, type: 3}
   m_Name: EarlyProfZamilTree
   m_EditorClassIdentifier: 
-  charactersName: 
-  startingSentence: {fileID: 0}
+  charactersName: Professor Zamil
+  startingSentence: {fileID: 11400000, guid: 576c6452333b6174dba28962beda5bc3, type: 2}

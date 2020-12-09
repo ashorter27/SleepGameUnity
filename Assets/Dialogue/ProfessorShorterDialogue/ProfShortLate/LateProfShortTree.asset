@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01fa20c350a541cab293115179aa419, type: 3}
   m_Name: LateProfShortTree
   m_EditorClassIdentifier: 
-  charactersName: 
-  startingSentence: {fileID: 0}
+  charactersName: Professor Shorter
+  startingSentence: {fileID: 11400000, guid: 7e02f0fd5b944c343845a3d92bfb1ab0, type: 2}

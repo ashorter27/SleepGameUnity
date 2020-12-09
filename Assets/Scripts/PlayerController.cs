@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public UnityEvent CharacterIsRunningEvent;
     public UnityEvent CharacterDoneRunningEvent;
 
+    public Slider staminaSlider;
 
 
     // Start is called before the first frame update
@@ -40,19 +41,17 @@ public class PlayerController : MonoBehaviour
       float verticalMovement = Input.GetAxis("Vertical");
       if (characterController.isGrounded){
             verticalSpeed = 0;
-            if (Input.GetButtonDown("Jump")){
+            if (Input.GetButtonDown("Jump") && (staminaSlider.value > 5)){
                 verticalSpeed += Mathf.Sqrt(jumpHeight * 2f * gravity);
                 CharacterJumpedEvent.Invoke();
             }
-            if(Input.GetKey(KeyCode.LeftShift)){
+            if(Input.GetKey(KeyCode.LeftShift) && (staminaSlider.value > 5)) {
               speed = 15f;
               CharacterIsRunningEvent.Invoke();
             }
         }
         else {
-            speed = 6f;
-            CharacterDoneRunningEvent.Invoke();
-            verticalSpeed -= gravity * Time.deltaTime;
+          CharacterBackTowalking();
         }
         Vector3 gravityMovement = new Vector3(0, verticalSpeed, 0);
 
@@ -73,4 +72,10 @@ public class PlayerController : MonoBehaviour
         currentRotation.x = Mathf.Clamp(currentRotation.x, upperLimit, lowerLimit);
         cameraTransform.localRotation = Quaternion.Euler(currentRotation);
     }
+    public void CharacterBackTowalking(){
+      speed = 6f;
+      CharacterDoneRunningEvent.Invoke();
+      verticalSpeed -= gravity * Time.deltaTime;
 }
+}
+
